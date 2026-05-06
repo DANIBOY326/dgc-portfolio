@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-brand-dark bg-white antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 xl:px-32;
+  }
+
+  .section-gap {
+    @apply py-20 md:py-28;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-blue text-white font-display font-semibold text-sm px-7 py-3.5 rounded-full transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-brand-blue text-brand-blue font-display font-semibold text-sm px-7 py-3.5 rounded-full transition-all duration-300 hover:bg-brand-blue hover:text-white hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2;
+  }
+
+  .tag {
+    @apply inline-block text-xs font-display font-semibold uppercase tracking-widest text-brand-blue bg-blue-50 px-3 py-1 rounded-full;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-brand-border shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+
+  .opacity-0-init { opacity: 0; }
+}
+
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nav underline hover effect */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0F39D0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Case study card hover */
+.case-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(15, 57, 208, 0.08);
+}
+
+/* Orange accent line */
+.accent-line {
+  display: inline-block;
+  width: 48px;
+  height: 3px;
+  background-color: #FF6B35;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
