@@ -104,6 +104,45 @@ export default function Hero() {
   </a>
 </div>
 
+{/* Social Links */}
+<div className="hero-reveal opacity-0 mt-6 flex items-center gap-5">
+  <a
+    href="https://www.linkedin.com/in/ojodanielt4991/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-brand-muted hover:text-brand-blue transition-all font-medium"
+  >
+    LinkedIn →
+  </a>
+
+  <a
+    href="https://github.com/DANIBOY326"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-brand-muted hover:text-brand-blue transition-all font-medium"
+  >
+    GitHub →
+  </a>
+
+   <a
+    href="https://www.facebook.com/daniel.ojo.568146"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-brand-muted hover:text-brand-blue transition-all font-medium"
+  >
+    Facebook →
+  </a>
+
+  <a
+    href="https://wa.me/2348106759178"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-brand-muted hover:text-green-600 transition-all font-medium"
+  >
+    WhatsApp →
+  </a>
+</div>
+
           {/* Skill badges */}
           <div className="hero-reveal opacity-0 mt-8 flex flex-wrap gap-2 mb-14">
             {badges.map((badge) => (

@@ -64,16 +64,12 @@ export default function About() {
   />
 </div>
 
-            <p className="font-body text-brand-muted leading-relaxed mb-5 text-base">
-              I'm a Product Marketing Designer with a multidisciplinary skillset spanning UI/UX, brand identity, social graphics, marketing creatives, and print production. I operate under{' '}
-              <span className="font-semibold text-brand-dark">DGC Multimedia & Print</span> - a design studio built around one belief: great design isn't decoration, it's a growth driver.
-            </p>
-            <p className="font-body text-brand-muted leading-relaxed mb-5 text-base">
-              I've worked with startups, SMEs, and marketing teams across Africa and beyond - helping them launch products that convert, build brands that stick, and create visual assets that actually perform in the market.
-            </p>
-            <p className="font-body text-brand-muted leading-relaxed text-base">
-              Whether you need a full product redesign, a high-converting ad campaign, or a brand identity built from scratch - I bring strategic thinking and craft to every brief.
-            </p>
+            <p className="font-body text-brand-muted leading-relaxed text-lg">
+        I’m Daniel (Temitope) Ojo a multidisciplinary Graphic, Brand, and UI/UX Designer with experience spanning visual communication, digital products, print production, and brand systems.
+        Over the years, I’ve worked on projects across branding, fintech UI/UX, marketing campaigns, publication materials, and large-format print solutions for businesses, startups, institutions, and public-sector organizations.
+        My approach combines strategy, usability, storytelling, and clean visual execution to create designs that not only look good, but communicate clearly and drive results.
+        I’m passionate about building impactful digital and visual experiences that connect brands with people across both physical and digital environments.
+      </p>
 
             {/* CTA */}
             <div className="mt-8 flex flex-wrap gap-4">
